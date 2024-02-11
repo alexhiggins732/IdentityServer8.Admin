@@ -17,7 +17,7 @@
         "jquery": "3.5.1",
         "jquery-validation": "^1.19.3",
         "jquery-validation-unobtrusive": "3.2.11",
-        "node-sass": "4.14.1",
+        "node-sass": "9.0.0",
         "open-iconic": "1.1.1",
         "popper.js": "1.16.1"
     },
@@ -25,7 +25,7 @@
         "gulp": "4.0.2",
         "gulp-concat": "2.6.1",
         "gulp-uglify": "3.0.2",
-        "gulp-sass": "4.1.0",
+        "gulp-sass": "5.1.0",
         "gulp-clean-css": "4.3.0",
         "del": "5.1.0"
     }

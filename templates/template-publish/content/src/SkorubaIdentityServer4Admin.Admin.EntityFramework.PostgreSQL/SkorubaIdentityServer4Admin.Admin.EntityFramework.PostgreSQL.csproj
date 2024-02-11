@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <Description>Entity Framework layer for the administration of the IdentityServer4 and Asp.Net Core Identity with PostrgreSQL support</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared\SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
+
+
+
+
+
+
+
+

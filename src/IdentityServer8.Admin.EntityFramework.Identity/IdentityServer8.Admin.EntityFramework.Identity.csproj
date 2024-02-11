@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  
+	  <Description>Entity Framework layer for the administration of the Asp.Net Core Identity and IdentityServer8</Description>
+	  <IsPackable>true</IsPackable>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HigginsSoft.IdentityServer8.EntityFramework" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IdentityServer8.Admin.EntityFramework\IdentityServer8.Admin.EntityFramework.csproj" />
+  </ItemGroup>
+
+</Project>

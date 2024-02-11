@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+
+		<Description>Business Logic layer for the administration of the IdentityServer8</Description>
+		<IsPackable>true</IsPackable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="HigginsSoft.IdentityServer8.EntityFramework" />
+		<ProjectReference Include="..\IdentityServer8.Admin.BusinessLogic.Shared\IdentityServer8.Admin.BusinessLogic.Shared.csproj" />
+		<ProjectReference Include="..\IdentityServer8.Admin.EntityFramework\IdentityServer8.Admin.EntityFramework.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Resources\ApiResourceServiceResource - Copy.Designer.cs">
+			<DependentUpon>ApiResourceServiceResource.resx</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+		</Compile>
+		<Compile Update="Resources\ApiResourceServiceResource.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ApiResourceServiceResource.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Resources\ApiScopeServiceResource.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ApiScopeServiceResource.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Resources\IdentityResourceServiceResource.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>IdentityResourceServiceResource.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Resources\ApiResourceServiceResource.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>ApiResourceServiceResource.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\ApiScopeServiceResource.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>ApiScopeServiceResource.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\IdentityResourceServiceResource.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>IdentityResourceServiceResource.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>

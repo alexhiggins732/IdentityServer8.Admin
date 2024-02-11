@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  
+	  <Description>Entity Framework layer for the administration of the IdentityServer8 and Asp.Net Core Identity with MySql support</Description>
+	  <IsPackable>true</IsPackable>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql"  />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IdentityServer8.Admin.EntityFramework.Shared\IdentityServer8.Admin.EntityFramework.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

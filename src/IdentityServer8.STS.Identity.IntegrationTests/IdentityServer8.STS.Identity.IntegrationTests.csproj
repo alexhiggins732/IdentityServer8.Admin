@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="HtmlAgilityPack" />
+		<PackageReference Include="IdentityModel" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" />
+		<PackageReference Include="FluentAssertions" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="xunit" />
+		<PackageReference Include="xunit.runner.visualstudio" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\IdentityServer8.STS.Identity\IdentityServer8.STS.Identity.csproj" />
+	</ItemGroup>
+
+</Project>

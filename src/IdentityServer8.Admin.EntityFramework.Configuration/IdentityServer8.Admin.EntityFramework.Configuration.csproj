@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  
+	  <Description>Entity Framework configuration for the administration of the IdentityServer8 and Asp.Net Core Identity</Description>
+	  <IsPackable>true</IsPackable>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer"/>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <PackageReference Include="Skoruba.AuditLogging.EntityFramework"  />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IdentityServer8.Admin.EntityFramework.Identity\IdentityServer8.Admin.EntityFramework.Identity.csproj" />
+  </ItemGroup>
+
+</Project>

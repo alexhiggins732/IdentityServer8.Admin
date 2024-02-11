@@ -1,0 +1,11 @@
+@using System.Reflection
+@using IdentityServer8.STS.Identity
+
+@{
+    var runtimeVersion = typeof(Startup)
+        .GetTypeInfo()
+        .Assembly
+        .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+}
+
+@runtimeVersion

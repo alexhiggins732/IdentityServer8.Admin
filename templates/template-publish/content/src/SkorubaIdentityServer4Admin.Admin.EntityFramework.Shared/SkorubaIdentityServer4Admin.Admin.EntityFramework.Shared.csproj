@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <Description>DbContexts and Identity entities for the administration of the IdentityServer4 and Asp.Net Core Identity</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Skoruba.AuditLogging.EntityFramework" Version="1.0.0" />
+    <PackageReference Include="IdentityServer8.Admin.EntityFramework.Configuration" Version="2.1.0" />
+  </ItemGroup>
+</Project>
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  
+	  <Description>Business Logic layer for the administration of the Asp.Net Core Identity and IdentityServer8</Description>
+	  <IsPackable>true</IsPackable>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HigginsSoft.IdentityServer8.EntityFramework"  />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IdentityServer8.Admin.BusinessLogic.Shared\IdentityServer8.Admin.BusinessLogic.Shared.csproj" />
+    <ProjectReference Include="..\IdentityServer8.Admin.EntityFramework.Identity\IdentityServer8.Admin.EntityFramework.Identity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\IdentityServiceResource.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

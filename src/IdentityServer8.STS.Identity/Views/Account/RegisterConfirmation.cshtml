@@ -1,0 +1,12 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model IdentityServer8.STS.Identity.ViewModels.Account.RegisterConfirmationViewModel
+@{
+    ViewData["Title"] = Localizer["ConfirmEmailTitle"];
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    @Localizer["VerificationSent"]
+</p>

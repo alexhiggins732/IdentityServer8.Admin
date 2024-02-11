@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+
+		<Description>Entity Framework layer for the administration of the IdentityServer8</Description>
+		<IsPackable>true</IsPackable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="HigginsSoft.IdentityServer8.EntityFramework" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
+		<PackageReference Include="Skoruba.AuditLogging.EntityFramework"  />
+	</ItemGroup>
+
+	<ItemGroup>
+
+		<ProjectReference Include="..\IdentityServer8.Admin.EntityFramework.Extensions\IdentityServer8.Admin.EntityFramework.Extensions.csproj" />
+	</ItemGroup>
+</Project>

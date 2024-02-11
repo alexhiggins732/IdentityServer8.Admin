@@ -1,0 +1,58 @@
+/*
+ Copyright (c) 2024 HigginsSoft
+ Written by Alexander Higgins https://github.com/alexhiggins732/ 
+
+ Copyright (c) 2018 Jan Skoruba
+
+ Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information. 
+ Source code for this software can be found at https://github.com/alexhiggins732/IdentityServer8
+
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+
+*/
+
+using System.Net;
+using System.Threading.Tasks;
+using FluentAssertions;
+using Microsoft.AspNetCore.Mvc.Testing;
+using IdentityServer8.Admin.Api.Configuration.Test;
+using IdentityServer8.Admin.Api.IntegrationTests.Common;
+using IdentityServer8.Admin.Api.IntegrationTests.Tests.Base;
+using Xunit;
+
+namespace IdentityServer8.Admin.Api.IntegrationTests.Tests
+{
+    public class RolesControllerTests : BaseClassFixture
+    {
+        public RolesControllerTests(TestFixture fixture) : base(fixture)
+        {
+        }
+
+        [Fact]
+        public async Task GetRolesAsAdmin()
+        {
+            SetupAdminClaimsViaHeaders();
+
+            var response = await Client.GetAsync("api/roles");
+
+            // Assert
+            response.EnsureSuccessStatusCode();
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+        }
+
+        [Fact]
+        public async Task GetRolesWithoutPermissions()
+        {
+            Client.DefaultRequestHeaders.Clear();
+
+            var response = await Client.GetAsync("api/roles");
+
+            // Assert
+            response.StatusCode.Should().Be(HttpStatusCode.Redirect);
+
+            //The redirect to login
+            response.Headers.Location.ToString().Should().Contain(AuthenticationConsts.AccountLoginPage);
+        }
+    }
+}

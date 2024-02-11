@@ -1,0 +1,35 @@
+/*
+ Copyright (c) 2024 HigginsSoft
+ Written by Alexander Higgins https://github.com/alexhiggins732/ 
+
+ Copyright (c) 2018 Jan Skoruba
+
+ Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information. 
+ Source code for this software can be found at https://github.com/alexhiggins732/IdentityServer8
+
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+
+*/
+
+namespace IdentityServer8.Shared.Configuration.Configuration.Common
+{
+    public class AzureKeyVaultConfiguration
+    {
+        public string AzureKeyVaultEndpoint { get; set; }
+
+        public string TenantId { get; set; }
+
+        public string ClientId { get; set; }
+
+        public string ClientSecret { get; set; }
+
+        public bool UseClientCredentials { get; set; }
+
+        public string IdentityServerCertificateName { get; set; }
+
+        public string DataProtectionKeyIdentifier { get; set; }
+
+        public bool ReadConfigurationFromKeyVault { get; set; }
+    }
+}

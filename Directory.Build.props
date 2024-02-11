@@ -2,10 +2,10 @@
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
-		<Version>8.0.1-alpha.2</Version>
+		<Version>8.0.1</Version>
 		<IdentityServerVersion>$(Version)</IdentityServerVersion>
 		<PackageId>HigginsSoft.$(MSBuildProjectName)</PackageId>
-		<Title>HigginsSoft.$(MSBuildProjectName)</Title>
+		<Title>$(MSBuildProjectName)</Title>
 
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 
@@ -17,10 +17,10 @@
 
 
         <Description>OpenID Connect and OAuth 2.0 Framework for ASP.NET Core</Description>
-        <Copyright>Copyright 2023 HigginsSoft</Copyright>
+        <Copyright>Copyright 2024 HigginsSoft. Alexander Higgins</Copyright>
         <Authors>HigginsSoft, Alexander Higgins, Brock Allen, Dominick Baier</Authors>
-  
-        <PackageTags>OAuth2 OAuth 2.0 OpenID Connect Security Identity IdentityServer AdminIdentityServer8 OpenIDConnect </PackageTags>
+ 
+        <PackageTags>OAuth2 OAuth 2.0 OpenID Connect Security Identity IdentityServer Admin IdentityServer8 OpenIDConnect </PackageTags>
 
 
         <PackageProjectUrl>https://github.com/alexhiggins732/IdentityServer8</PackageProjectUrl>
@@ -30,22 +30,12 @@
         <!-- Declare that the Repository URL can be published to NuSpec -->
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <!-- Embed source files that are not tracked by the source control manager to the PDB -->
-        <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <!-- Include PDB in the built .nupkg -->
-    
-        <!-- strong naming fml -->
-        <AssemblyOriginatorKeyFile>$(SolutionDir)key.snk</AssemblyOriginatorKeyFile>
-        <SignAssembly>true</SignAssembly>
 
-
-
-
-        <PackageIcon>icon.png</PackageIcon>
- 
-        <Deterministic>true</Deterministic>
 
         <!-- Include PDB in the built .nupkg -->
         <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+
+        <PackageIcon>icon.png</PackageIcon>
 
 
         <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
@@ -54,12 +44,11 @@
 
         <IsTrimmable>false</IsTrimmable>
         <EnableAOTAnalyzer>false</EnableAOTAnalyzer>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>portable</DebugType>
 
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
-		<LangVersion>latest</LangVersion>
-		<GenerateDocumentationFile>    false</GenerateDocumentationFile>
+        <Deterministic>true</Deterministic>
+        <LangVersion>latest</LangVersion>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <PackageOutputPath>$(SolutionDir)nuget</PackageOutputPath>
 
@@ -67,7 +56,8 @@
         <IsPackable>false</IsPackable>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <IncludeBuildOutput>true</IncludeBuildOutput>

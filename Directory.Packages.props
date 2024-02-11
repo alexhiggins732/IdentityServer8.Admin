@@ -22,7 +22,6 @@
 		<PackageVersion Include="AspNetCore.HealthChecks.SqlServer" Version="$(AspnetVersion)" />
 		<PackageVersion Include="AspNetCore.HealthChecks.UI.Client" Version="$(AspnetVersion)" />
 		<PackageVersion Include="AutoMapper" Version="13.0.1 " />
-
 		<PackageVersion Include="Azure.Extensions.AspNetCore.DataProtection.Keys" Version="1.1.0" />
 		<PackageVersion Include="Azure.Identity" Version="1.10.4" />
 		<PackageVersion Include="Azure.Security.KeyVault.Certificates" Version="4.2.0" />

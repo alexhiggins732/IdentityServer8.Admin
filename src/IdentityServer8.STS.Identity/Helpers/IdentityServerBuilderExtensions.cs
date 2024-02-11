@@ -19,6 +19,7 @@ using System.Security.Cryptography.X509Certificates;
 using Microsoft.Extensions.Configuration;
 using IdentityServer8.Shared.Configuration.Configuration.Common;
 using IdentityServer8.Shared.Configuration.Helpers;
+using System.Threading;
 
 namespace IdentityServer8.STS.Identity.Helpers
 {
@@ -30,6 +31,7 @@ namespace IdentityServer8.STS.Identity.Helpers
 
         private const string ValidationCertificateThumbprintNotFound = "Validation certificate thumbprint not found";
         private const string ValidationCertificatePathIsNotSpecified = "Validation certificate file path is not specified";
+        private static readonly Mutex Mutex = new Mutex();
 
         /// <summary>
         /// Add custom signing certificate from certification store according thumbprint or from file
@@ -112,7 +114,9 @@ namespace IdentityServer8.STS.Identity.Helpers
             }
             else if (certificateConfiguration.UseTemporarySigningKeyForDevelopment)
             {
+                Mutex.WaitOne();
                 builder.AddDeveloperSigningCredential();
+                Mutex.ReleaseMutex();
             }
             else
             {

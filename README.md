@@ -1,38 +1,7 @@
 ![Logo](docs/Images/IdentityServer8.Admin-Logo-ReadMe.png)
 
-# Identity Server 8 update
-This project is a DotNet 8 revival of the Identity Server 4 and Identity Server 4 Admin UI, for Open ID Connect (OIDC) and OAuth, which was archived when .NET Core 3.1 reached end of support.
-
-[HigginsSoft.IdentityServer8 and Admin UI Nuget Packages](https://www.nuget.org/packages?q=HigginsSoft.IdentityServer8) are available here for use in DotNet 8.
-
-
-# IdentityServer8.Admin
-
-> The administration for the [IdentityServer8](https://github.com/alexhiggins732/IdentityServer8) and Asp.Net Core Identity
-
-## Project Status
-
-
-The application is written in the **Asp.Net Core MVC - using .NET 8**
-
-This project is a refresh of the now deprecated original IdentityServer4.Admin which is no longer being maintained.
-
-[HigginsSoft.IdentityServer8 Nuget Packages](https://www.nuget.org/packages?q=HigginsSoft.IdentityServer8) are available for use in DotNet 8 projects.
-
-Work is currently being done to update the project to t DotNet 8.
-
-Initially the main nuget packages supporting DotNet 8 will be released, followed by the DotNet tool and project templates.
-
-Once the project is stable, the documentation will be updated to reflect the changes.
-
-In the meantime, the original documentation is still available and should work for most cases.
-
-That project used the commerical paid version of Identity Server offered by [Duende Software](https://duendesoftware.com/).
-
-## 🎉  If you are looking for the paid version of Duende IdentityServer Admin UI, it is available [here](https://github.com/higginssoft/Duende.IdentityServer.Admin) ⚡
-
 # Build Status And Stats
-|Package||
+
 [![Master | Build](https://github.com/alexhiggins732/IdentityServer8.Admin/actions/workflows/master.yml/badge.svg)](https://github.com/alexhiggins732/IdentityServer8.Admin/actions/workflows/master.yml)
 [![Master|CodeQL](https://github.com/alexhiggins732/IdentityServer8.Admin/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/alexhiggins732/IdentityServer8.Admin/actions/workflows/codeql.yml)
 [![Release|Build](https://github.com/alexhiggins732/IdentityServer8.Admin/actions/workflows/release.yml/badge.svg)](https://github.com/alexhiggins732/IdentityServer8.Admin/actions/workflows/release.yml)
@@ -73,6 +42,39 @@ That project used the commerical paid version of Identity Server offered by [Due
 |[HigginsSoft.IdentityServer8.Admin.BusinessLogic](https://www.nuget.org/packages?q=HigginsSoft.IdentityServer8.Admin.BusinessLogic)|![NuGet Downloads](https://img.shields.io/nuget/dt/HigginsSoft.IdentityServer8.Admin.BusinessLogic)|
 |[HigginsSoft.IdentityServer8.Admin.EntityFramework.Configuration](https://www.nuget.org/packages?q=HigginsSoft.IdentityServer8.Admin.EntityFramework.Configuration)|![NuGet Downloads](https://img.shields.io/nuget/dt/HigginsSoft.IdentityServer8.Admin.EntityFramework.Configuration)|
 | | |
+
+# Identity Server 8 update
+This project is a DotNet 8 revival of the Identity Server 4 and Identity Server 4 Admin UI, for Open ID Connect (OIDC) and OAuth, which was archived when .NET Core 3.1 reached end of support.
+
+[HigginsSoft.IdentityServer8 and Admin UI Nuget Packages](https://www.nuget.org/packages?q=HigginsSoft.IdentityServer8) are available here for use in DotNet 8.
+
+
+# IdentityServer8.Admin
+
+> The administration for the [IdentityServer8](https://github.com/alexhiggins732/IdentityServer8) and Asp.Net Core Identity
+
+## Project Status
+
+
+The application is written in the **Asp.Net Core MVC - using .NET 8**
+
+This project is a refresh of the now deprecated original IdentityServer4.Admin which is no longer being maintained.
+
+[HigginsSoft.IdentityServer8 Nuget Packages](https://www.nuget.org/packages?q=HigginsSoft.IdentityServer8) are available for use in DotNet 8 projects.
+
+Work is currently being done to update the project to t DotNet 8.
+
+Initially the main nuget packages supporting DotNet 8 will be released, followed by the DotNet tool and project templates.
+
+Once the project is stable, the documentation will be updated to reflect the changes.
+
+In the meantime, the original documentation is still available and should work for most cases.
+
+That project used the commerical paid version of Identity Server offered by [Duende Software](https://duendesoftware.com/).
+
+## 🎉  If you are looking for the paid version of Duende IdentityServer Admin UI, it is available [here](https://github.com/higginssoft/Duende.IdentityServer.Admin) ⚡
+
+
 
 ## Requirements
 

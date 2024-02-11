@@ -25,6 +25,10 @@ namespace IdentityServer8.Admin.IntegrationTests.Common
     {
         public static void SetAdminClaimsViaHeaders(this HttpClient client, AdminConfiguration adminConfiguration)
         {
+            if (client.DefaultRequestHeaders.Contains(AuthenticatedTestRequestMiddleware.TestAuthorizationHeader))
+            {
+                return;
+            }
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, Guid.NewGuid().ToString()),

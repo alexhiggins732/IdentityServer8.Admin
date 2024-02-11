@@ -76,7 +76,7 @@ jobs:
 
     - name: Restore dependencies
       if: ${{ (matrix.language == 'csharp') }} 
-      run: dotnet restore src/IdentityServer8.sln
+      run: dotnet restore IdentityServer8.Admin.sln
     - name: Build
       if: ${{ (matrix.language == 'csharp') }} 
       run: dotnet build IdentityServer8.Admin.sln --configuration Release --no-restore

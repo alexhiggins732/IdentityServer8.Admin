@@ -12,13 +12,6 @@
 
 */
 
-using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Net.Http;
-using System.Security.Claims;
-using IdentityServer8.Admin.UI.Configuration;
-using IdentityServer8.Admin.UI.Middlewares;
-
 namespace IdentityServer8.Admin.IntegrationTests.Common
 {
 	public static class HttpClientExtensions

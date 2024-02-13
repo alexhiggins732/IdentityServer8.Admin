@@ -12,12 +12,6 @@
 
 */
 
-using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Threading.Tasks;
-using IdentityServer8.STS.Identity.IntegrationTests.Common;
-
 namespace IdentityServer8.STS.Identity.IntegrationTests.Mocks
 {
     public static class UserMocks

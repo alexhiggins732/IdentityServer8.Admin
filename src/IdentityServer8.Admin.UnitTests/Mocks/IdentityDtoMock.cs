@@ -12,10 +12,6 @@
 
 */
 
-using System;
-using Bogus;
-using IdentityServer8.Admin.BusinessLogic.Identity.Dtos.Identity;
-
 namespace IdentityServer8.Admin.UnitTests.Mocks
 {
     public class IdentityDtoMock<TKey>

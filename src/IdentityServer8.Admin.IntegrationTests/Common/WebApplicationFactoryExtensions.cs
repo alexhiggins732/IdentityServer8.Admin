@@ -12,12 +12,6 @@
 
 */
 
-using System.Net.Http;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.AspNetCore.TestHost;
-using IdentityServer8.Admin.Configuration.Test;
-
 namespace IdentityServer8.Admin.IntegrationTests.Common
 {
     public static class WebApplicationFactoryExtensions

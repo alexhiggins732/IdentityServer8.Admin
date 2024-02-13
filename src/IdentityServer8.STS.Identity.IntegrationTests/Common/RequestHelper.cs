@@ -12,10 +12,6 @@
 
 */
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-
 namespace IdentityServer8.STS.Identity.IntegrationTests.Common
 {
     public class RequestHelper

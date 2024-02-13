@@ -12,10 +12,6 @@
 
 */
 
-using System;
-using Bogus;
-using IdentityServer8.EntityFramework.Entities;
-
 namespace IdentityServer8.Admin.UnitTests.Mocks
 {
     public static class IdentityResourceMock

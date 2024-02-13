@@ -12,14 +12,6 @@
 
 */
 
-using System.Net;
-using System.Threading.Tasks;
-using FluentAssertions;
-using IdentityServer8.STS.Identity.IntegrationTests.Common;
-using IdentityServer8.STS.Identity.IntegrationTests.Mocks;
-using IdentityServer8.STS.Identity.IntegrationTests.Tests.Base;
-using Xunit;
-
 namespace IdentityServer8.STS.Identity.IntegrationTests.Tests
 {
     public class GrantsControllerTests : BaseClassFixture

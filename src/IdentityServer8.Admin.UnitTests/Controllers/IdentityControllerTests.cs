@@ -12,39 +12,6 @@
 
 */
 
-using System;
-using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
-using FluentAssertions;
-using IdentityServer8.EntityFramework.Options;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Razor;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Logging;
-using Skoruba.AuditLogging.EntityFramework.Entities;
-using Skoruba.AuditLogging.EntityFramework.Extensions;
-using Skoruba.AuditLogging.EntityFramework.Repositories;
-using Skoruba.AuditLogging.EntityFramework.Services;
-using IdentityServer8.Admin.BusinessLogic.Identity.Dtos.Identity;
-using IdentityServer8.Admin.BusinessLogic.Identity.Services.Interfaces;
-using IdentityServer8.Admin.UI.Areas.AdminUI.Controllers;
-using IdentityServer8.Admin.EntityFramework.Shared.DbContexts;
-using IdentityServer8.Admin.EntityFramework.Shared.Entities.Identity;
-using IdentityServer8.Admin.UnitTests.Mocks;
-using IdentityServer8.Admin.UI.Helpers;
-using IdentityServer8.Admin.UI.Helpers.Localization;
-using Xunit;
-using System.Security.Claims;
-
 namespace IdentityServer8.Admin.UnitTests.Controllers
 {
     public class IdentityControllerTests

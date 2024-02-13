@@ -12,11 +12,6 @@
 
 */
 
-using System;
-using System.Net.Http;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-
 namespace IdentityServer8.STS.Identity.IntegrationTests.Common
 {
     public static class AntiForgeryHelper

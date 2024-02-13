@@ -12,13 +12,6 @@
 
 */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Bogus;
-using IdentityServer8.EntityFramework.Entities;
-using IdentityServer8.Admin.EntityFramework.Constants;
-
 namespace IdentityServer8.Admin.UnitTests.Mocks
 {
     public static class ClientMock

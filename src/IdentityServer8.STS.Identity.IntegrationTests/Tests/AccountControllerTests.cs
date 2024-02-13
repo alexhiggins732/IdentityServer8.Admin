@@ -12,20 +12,6 @@
 
 */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
-using FluentAssertions;
-using HtmlAgilityPack;
-using Microsoft.AspNetCore.Mvc.Testing;
-using IdentityServer8.STS.Identity.Configuration.Test;
-using IdentityServer8.STS.Identity.IntegrationTests.Common;
-using IdentityServer8.STS.Identity.IntegrationTests.Mocks;
-using IdentityServer8.STS.Identity.IntegrationTests.Tests.Base;
-using Xunit;
-
 namespace IdentityServer8.STS.Identity.IntegrationTests.Tests
 {
     public class AccountControllerTests : BaseClassFixture

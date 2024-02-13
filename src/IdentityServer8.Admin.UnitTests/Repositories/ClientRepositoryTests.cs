@@ -12,19 +12,6 @@
 
 */
 
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using FluentAssertions;
-using IdentityServer8.EntityFramework.Entities;
-using IdentityServer8.EntityFramework.Options;
-using Microsoft.EntityFrameworkCore;
-using IdentityServer8.Admin.EntityFramework.Repositories;
-using IdentityServer8.Admin.EntityFramework.Repositories.Interfaces;
-using IdentityServer8.Admin.EntityFramework.Shared.DbContexts;
-using IdentityServer8.Admin.UnitTests.Mocks;
-using Xunit;
-
 namespace IdentityServer8.Admin.UnitTests.Repositories
 {
     public class ClientRepositoryTests

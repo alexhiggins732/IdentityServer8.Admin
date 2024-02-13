@@ -51,12 +51,6 @@
 		<PackageVersion Include="HigginsSoft.IdentityServer8.AspNetIdentity" Version="$(IdentityServerVersion)" />
 		<PackageVersion Include="HigginsSoft.IdentityServer8.EntityFramework" Version="$(IdentityServerVersion)" />
 		<PackageVersion Include="HigginsSoft.IdentityServer8.EntityFramework.Storage" Version="$(IdentityServerVersion)" />
-		<PackageVersion Include="HigginsSoft.IdentityServer8.Admin.BusinessLogic" Version="$(IdentityServerVersion)" />
-		<PackageVersion Include="HigginsSoft.IdentityServer8.Admin.BusinessLogic.Identity"  Version="$(IdentityServerVersion)" />
-		<PackageVersion Include="HigginsSoft.IdentityServer8.Admin.UI" Version="$(IdentityServerVersion)" />
-		<PackageVersion Include="HigginsSoft.IdentityServer8.Shared.Configuration" Version="$(IdentityServerVersion)" />
-		<PackageVersion Include="HigginsSoft.IdentityServer8.Admin.EntityFramework" Version="$(IdentityServerVersion)" />
-		<PackageVersion Include="HigginsSoft.IdentityServer8.Admin.EntityFramework.Configuration" Version="$(IdentityServerVersion)" />
 		<PackageVersion Include="Microsoft.AspNetCore.Authentication.Certificate" Version="$(AspnetVersion)" />
 		<PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="$(AspnetVersion)" />
 		<PackageVersion Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="$(AspnetMinorVersion)" />

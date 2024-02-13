@@ -12,15 +12,6 @@
 
 */
 
-using System.Net;
-using System.Threading.Tasks;
-using FluentAssertions;
-using Microsoft.AspNetCore.Mvc.Testing;
-using IdentityServer8.Admin.Api.Configuration.Test;
-using IdentityServer8.Admin.Api.IntegrationTests.Common;
-using IdentityServer8.Admin.Api.IntegrationTests.Tests.Base;
-using Xunit;
-
 namespace IdentityServer8.Admin.Api.IntegrationTests.Tests
 {
     public class RolesControllerTests : BaseClassFixture

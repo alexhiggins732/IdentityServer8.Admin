@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-
+        <ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Bogus"  />
+		<PackageReference Include="Bogus" />
 		<PackageReference Include="Moq" />
 		<PackageReference Include="FluentAssertions" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" />
@@ -13,9 +13,8 @@
 		<PackageReference Include="xunit.runner.visualstudio" />
 	</ItemGroup>
 
-
 	<ItemGroup>
-		<ProjectReference Include="..\..\src\IdentityServer8.Admin\IdentityServer8.Admin.csproj" />
+	  <ProjectReference Include="..\IdentityServer8.Admin\IdentityServer8.Admin.csproj" />
 	</ItemGroup>
 
 

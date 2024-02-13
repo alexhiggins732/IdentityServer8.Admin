@@ -12,10 +12,6 @@
 
 */
 
-using System.Net.Http;
-using Microsoft.AspNetCore.TestHost;
-using Xunit;
-
 namespace IdentityServer8.STS.Identity.IntegrationTests.Tests.Base
 {
     public class BaseClassFixture : IClassFixture<TestFixture>

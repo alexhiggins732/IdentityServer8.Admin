@@ -12,12 +12,6 @@
 
 */
 
-using System;
-using System.Linq;
-using Bogus;
-using IdentityServer8.Admin.BusinessLogic.Dtos.Configuration;
-using IdentityServer8.Admin.EntityFramework.Constants;
-
 namespace IdentityServer8.Admin.UnitTests.Mocks
 {
     public static class ApiResourceDtoMock

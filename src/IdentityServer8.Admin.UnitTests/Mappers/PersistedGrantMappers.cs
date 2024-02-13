@@ -12,12 +12,6 @@
 
 */
 
-using System;
-using FluentAssertions;
-using IdentityServer8.Admin.BusinessLogic.Mappers;
-using IdentityServer8.Admin.UnitTests.Mocks;
-using Xunit;
-
 namespace IdentityServer8.Admin.UnitTests.Mappers
 {
     public class PersistedGrantMappers
@@ -31,7 +25,8 @@ namespace IdentityServer8.Admin.UnitTests.Mappers
             var persistedGrant = PersistedGrantMock.GenerateRandomPersistedGrant(persistedGrantKey);
 
             //Try map to DTO
-            var persistedGrantDto = persistedGrant.ToModel();
+            //var persistedGrantDto = persistedGrant.ToModel(); // TODO: unifiy duplicate method extension
+            var persistedGrantDto = BusinessLogic.Mappers.PersistedGrantMappers.ToModel(persistedGrant);
 
             //Asert
             persistedGrantDto.Should().NotBeNull();

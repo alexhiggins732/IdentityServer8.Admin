@@ -10,7 +10,6 @@
 		<PackageReference Include="xunit" />
 		<PackageReference Include="xunit.runner.visualstudio" />
 	</ItemGroup>
-
 	<ItemGroup>
 		<ProjectReference Include="..\..\src\IdentityServer8.Admin.Api\IdentityServer8.Admin.Api.csproj" />
 	</ItemGroup>

@@ -12,12 +12,6 @@
 
 */
 
-using System.Threading.Tasks;
-using FluentAssertions;
-using IdentityModel.Client;
-using IdentityServer8.STS.Identity.IntegrationTests.Tests.Base;
-using Xunit;
-
 namespace IdentityServer8.STS.Identity.IntegrationTests.Tests
 {
     public class IdentityServerTests : BaseClassFixture

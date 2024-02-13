@@ -12,14 +12,6 @@
 
 */
 
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Localization;
-using Moq;
-using IdentityServer8.Admin.UI.Helpers.Identity;
-using System.ComponentModel.Design;
-using System.Linq;
-using Xunit;
-
 namespace IdentityServer8.Admin.UnitTests.Helpers
 {
     public class IdentityErrorDescriberTests

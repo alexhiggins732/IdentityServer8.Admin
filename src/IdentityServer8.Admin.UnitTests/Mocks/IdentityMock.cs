@@ -12,15 +12,6 @@
 
 */
 
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Bogus;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Moq;
-using IdentityServer8.Admin.EntityFramework.Shared.Entities.Identity;
 
 namespace IdentityServer8.Admin.UnitTests.Mocks
 {

@@ -12,13 +12,6 @@
 
 */
 
-using System.Net.Http;
-using Microsoft.AspNetCore.TestHost;
-using Microsoft.Extensions.DependencyInjection;
-using IdentityServer8.Admin.IntegrationTests.Common;
-using IdentityServer8.Admin.UI.Configuration;
-using Xunit;
-
 namespace IdentityServer8.Admin.IntegrationTests.Tests.Base
 {
 	public class BaseClassFixture : IClassFixture<TestFixture>

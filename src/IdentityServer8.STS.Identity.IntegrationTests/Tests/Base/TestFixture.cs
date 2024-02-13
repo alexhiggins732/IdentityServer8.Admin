@@ -12,13 +12,6 @@
 
 */
 
-using System;
-using System.Net.Http;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.TestHost;
-using Microsoft.Extensions.Configuration;
-using IdentityServer8.STS.Identity.Configuration.Test;
-
 namespace IdentityServer8.STS.Identity.IntegrationTests.Tests.Base
 {
     public class TestFixture : IDisposable

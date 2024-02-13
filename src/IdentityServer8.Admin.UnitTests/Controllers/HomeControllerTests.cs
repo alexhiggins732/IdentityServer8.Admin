@@ -12,13 +12,6 @@
 
 */
 
-using System;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using IdentityServer8.Admin.UI.Areas.AdminUI.Controllers;
-using Xunit;
-
 namespace IdentityServer8.Admin.UnitTests.Controllers
 {
     public class HomeControllerTests

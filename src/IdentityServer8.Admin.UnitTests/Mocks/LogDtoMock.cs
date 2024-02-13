@@ -12,9 +12,6 @@
 
 */
 
-using Bogus;
-using IdentityServer8.Admin.BusinessLogic.Dtos.Log;
-
 namespace IdentityServer8.Admin.UnitTests.Mocks
 {
     public class LogDtoMock

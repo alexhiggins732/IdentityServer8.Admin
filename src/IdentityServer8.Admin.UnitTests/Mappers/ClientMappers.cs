@@ -12,13 +12,6 @@
 
 */
 
-using System.Linq;
-using FluentAssertions;
-using IdentityServer8.Admin.BusinessLogic.Mappers;
-using IdentityServer8.Admin.BusinessLogic.Mappers.Converters;
-using IdentityServer8.Admin.UnitTests.Mocks;
-using Xunit;
-
 namespace IdentityServer8.Admin.UnitTests.Mappers
 {
     public class ClientMappers

@@ -12,11 +12,6 @@
 
 */
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using Microsoft.Net.Http.Headers;
-
 namespace IdentityServer8.STS.Identity.IntegrationTests.Common
 {
     public static class CookiesHelper

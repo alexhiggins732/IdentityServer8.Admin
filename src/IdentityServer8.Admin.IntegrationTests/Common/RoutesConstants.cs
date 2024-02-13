@@ -12,8 +12,6 @@
 
 */
 
-using System.Collections.Generic;
-
 namespace IdentityServer8.Admin.IntegrationTests.Common
 {
     public static class RoutesConstants

@@ -12,13 +12,6 @@
 
 */
 
-using System.Net;
-using System.Threading.Tasks;
-using FluentAssertions;
-using IdentityServer8.Admin.IntegrationTests.Tests.Base;
-using IdentityServer8.Admin.UI.Configuration.Constants;
-using Xunit;
-
 namespace IdentityServer8.Admin.IntegrationTests.Tests
 {
 	public class LogControllerTests : BaseClassFixture
